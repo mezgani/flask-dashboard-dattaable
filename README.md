@@ -42,8 +42,8 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 
 ```bash
 $ # Get the code
-$ git clone https://github.com/app-generator/flask-black-dashboard.git
-$ cd flask-black-dashboard
+$ git clone https://github.com/app-generator/flask-dashboard-dattaable.git
+$ cd flask-dashboard-dattaable
 $
 $ # Virtualenv modules installation (Unix based systems)
 $ virtualenv --no-site-packages env
@@ -93,8 +93,8 @@ The application can be easily executed in a docker container. The steps:
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/flask-material-dashboard.git
-$ cd flask-material-dashboard
+$ git clone https://github.com/app-generator/flask-dashboard-dattaable.git
+$ cd flask-dashboard-dattaable
 ```
 
 > Start the app in Docker
