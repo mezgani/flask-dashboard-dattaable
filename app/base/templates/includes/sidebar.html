@@ -1,0 +1,698 @@
+
+    <nav class="main-menu">
+        <div class="main-menu-inner">
+    
+            <!-- Side icon menu -->
+            <ul>
+                <li class="main-logo">
+                    <a href="/"><img src="/static/assets/images/logos/square-violet.svg" alt=""></a>
+                </li>
+                <li class="side-icon" data-child-menu="dashboard-menu">
+                    <i class="sl sl-icon-speedometer"></i>
+                </li>
+                <li class="side-icon" data-child-menu="documents-menu">
+                    <i class="sl sl-icon-docs"></i>
+                </li>
+                <li class="side-icon" data-child-menu="business-menu">
+                    <i class="sl sl-icon-briefcase"></i>
+                </li>
+                <li class="side-icon" data-child-menu="misc-menu">
+                    <i class="sl sl-icon-graph"></i>
+                </li>
+                <li class="side-icon" data-child-menu="settings-menu">
+                    <i class="sl sl-icon-settings"></i>
+                </li>
+            </ul>
+            <!-- /Side icon menu -->
+
+            <!-- Profile wrapper -->
+            <ul class="profile">
+                <li>
+                    <!-- Profile avatar -->
+                    <a class="profile-trigger" href="javascript:void(0);">
+                        <img class="main-menu-avatar" src="https://via.placeholder.com/250x250" alt=""
+                            data-demo-src="/static/assets/images/avatars/helen.jpg">
+                        <span class="dot"></span>
+                    </a>
+                    <!-- /Profile avatar -->
+            
+                    <!-- Profile avatar -->
+                    <div class="fab js-hamburger">
+                        <!-- Profile page wrapper -->
+                        <div class="profile-container">
+                            <div class="inner">
+                                <!-- Profile with cover -->
+                                <div id="profile-cover" class="profile-cover has-background-image" data-background="https://source.unsplash.com/ANCoz0JMhiQ/1600x900">
+                                    <div class="cover-overlay"></div>
+                                    <div class="heading-wrapper">
+                                        <div class="profile-heading">
+                                            <div class="left-side">
+                                                <div class="image is-128x128 avatar">
+                                                    <div class="avatar-overlay">
+                                                        <i class="fa fa-camera fa-2x"></i>
+                                                    </div>
+                                                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/helen.jpg">
+                                                </div>
+                                                <div class="name">
+                                                    <h3>
+                                                        {{ current_user.username }}
+                                                    </h3>
+                                                    <p>
+                                                        {{ current_user.email }}
+                                                    </p>
+                                                    <button class="button dash-btn ripple primary-btn btn-outlined follow rounded">
+                                                        <i class="fa fa-check"></i>Follow
+                                                    </button>
+                                                </div>
+                                            </div>
+                                
+                                            <div class="right-side">
+                                                <div class="stat-wrap has-text-centered is-hidden-mobile">
+                                                    <p class="stat-val">74</p>
+                                                    <p class="stat-key">Projects</p>
+                                                </div>
+                                                <div class="stat-wrap has-text-centered is-hidden-mobile">
+                                                    <p class="stat-val">179</p>
+                                                    <p class="stat-key">Deals</p>
+                                                </div>
+                                                <div class="stat-wrap has-text-centered is-hidden-mobile">
+                                                    <p class="stat-val">963</p>
+                                                    <p class="stat-key">Leads</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Profile menu FAB -->
+                                    <div class="profile-fab">
+                                        <div class="fab-wrapper">
+                                            <button id="show-notifications" class="notifications fab-btn mini ripple" data-toggle="tooltip" data-placement="left" data-title="Notifications">
+                                                <i class="material-icons">notifications</i>
+                                            </button>
+                                            <button id="show-team" class="team fab-btn mini ripple" data-toggle="tooltip" data-placement="top" data-title="Team">
+                                                <i class="material-icons">work_outline</i>
+                                            </button>
+                                            <button id="show-details" class="details fab-btn mini ripple" data-toggle="tooltip" data-placement="top" data-title="Profile">
+                                                <i class="material-icons">verified_user</i>
+                                            </button>
+                                            <button id="profile-fab-trigger" class="fab-btn pop-fab">
+                                                <span class="profile-menu-wrapper">
+                                                    <span class="icon-box-toggle">
+                                                        <span class="rotate">
+                                                            <i class="icon-line-top"></i>
+                                                            <i class="icon-line-center"></i>
+                                                            <i class="icon-line-bottom"></i>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Profile Sections -->
+                                <div class="profile-sections-outer">
+                                    <div class="profile-sections-wrapper">
+            
+                                        <!-- Profile details -->
+                                        <div id="profile-details" class="profile-details animated preFadeInUp fadeInUp">
+                                            <!-- Details sub view -->
+                                            <div id="profile-view" class="profile-view">
+                                            
+                                                <div class="columns is-multiline">
+                                                    <div class="column is-6">
+                                                        <div class="info-card">
+                                                            <div class="info-header">
+                                                                <h3>Personal Info</h3>
+                                                                <i class="im im-icon-Professor"></i>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Hipster-Men"></i>
+                                                                <div class="meta">
+                                                                    <label>Full name</label>
+                                                                    <p>Helen Miller</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Map2"></i>
+                                                                <div class="meta">
+                                                                    <label>Location</label>
+                                                                    <p>California, CA</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-6">
+                                                        <div class="info-card">
+                                                            <div class="info-header">
+                                                                <h3>Job Info</h3>
+                                                                <i class="im im-icon-Tower-2"></i>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Colosseum"></i>
+                                                                <div class="meta">
+                                                                    <label>Company</label>
+                                                                    <p>Acme Inc.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Management"></i>
+                                                                <div class="meta">
+                                                                    <label>Position</label>
+                                                                    <p>Sales Manager</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-6">
+                                                        <div class="info-card">
+                                                            <div class="info-header">
+                                                                <h3>Contact Info</h3>
+                                                                <i class="im im-icon-Post-Mail2"></i>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Envelope"></i>
+                                                                <div class="meta">
+                                                                    <label>Email</label>
+                                                                    <p>helen@acme.io</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Smartphone-4"></i>
+                                                                <div class="meta">
+                                                                    <label>Mobile</label>
+                                                                    <p>(+1) 555 165-5897</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Phone-3"></i>
+                                                                <div class="meta">
+                                                                    <label>Office</label>
+                                                                    <p>(+1) 555 165-5897</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column is-6">
+                                                        <div class="info-card">
+                                                            <div class="info-header">
+                                                                <h3>Social Media</h3>
+                                                                <i class="im im-icon-Note"></i>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Facebook-2"></i>
+                                                                <div class="meta">
+                                                                    <label>Facebook</label>
+                                                                    <p>facebook.com/helen-miller</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Twitter"></i>
+                                                                <div class="meta">
+                                                                    <label>Twitter</label>
+                                                                    <p>twitter.com/helen-miller</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-block">
+                                                                <i class="im im-icon-Linkedin"></i>
+                                                                <div class="meta">
+                                                                    <label>Linkedin</label>
+                                                                    <p>linkedin.com/helen-miller</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /Details sub view --></div>
+                                        <!-- Profile team -->
+                                        <div id="profile-team" class="profile-team is-hidden">
+                                            <!-- Team header -->
+                                            <div class="columns">
+                                                <div class="column is-10 is-offset-1">
+                                                    <div class="flex-card is-top light-bordered raised animated preFadeInUp fadeInUp">
+                                                        <div class="card-body">
+                                                            <div class="columns is-vcentered">
+                                                                <div class="column is-6">
+                                                                    <div class="team-logo">
+                                                                        <img src="/static/assets/images/logos/partners/acme.svg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="column is-6">
+                                                                    <div class="team-info">
+                                                                        <div class="team-number">
+                                                                            <span>15</span> Team members
+                                                                        </div>
+                                                                        <div class="team-avatars">
+                                                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/anthony.jpg">
+                                                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/barry.jpg">
+                                                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/carolin.png">
+                                                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/ray.jpg">
+                                                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/nina.jpg">
+                                                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/marc.jpg">
+                                                                            <span>+9</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /Team header -->
+                                        
+                                            <!-- Team List -->
+                                            <div class="columns is-vcentered is-multiline animated preFadeInUp fadeInUp">
+                                                <!-- Team member -->
+                                                <div class="column is-4">
+                                                    <div class="flex-card team-card light-bordered light-raised">
+                                                        <div class="card-heading padding-10">
+                                                            <span class="tag is-success">Online</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="avatar">
+                                                                <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/anthony.jpg">
+                                                            </div>
+                                                            <div class="user-id">
+                                                                <div class="name">Anthony Briggs</div>
+                                                                <div class="position">Sales Manager</div>
+                                                                <div class="location"><i class="sl sl-icon-globe"></i> Stockholm</div>
+                                                            </div>
+                                                            <div class="user-description">
+                                                                Anthony is a specialist of online sales and abandoned cart recovery process
+                                                            </div>
+                                                            <div class="card-action has-text-centered">
+                                                                <button class="button btn-dash rounded secondary-btn is-fullwidth ripple no-lh">Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Team member -->
+                                                <div class="column is-4">
+                                                    <div class="flex-card team-card light-bordered light-raised">
+                                                        <div class="card-heading padding-10">
+                                                            <span class="tag">Offline</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="avatar">
+                                                                <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/barry.jpg">
+                                                            </div>
+                                                            <div class="user-id">
+                                                                <div class="name">Arthur Baxter</div>
+                                                                <div class="position">Head of Sales </div>
+                                                                <div class="location"><i class="sl sl-icon-globe"></i> London</div>
+                                                            </div>
+                                                            <div class="user-description">
+                                                                Arthur is the big boss of Europe Sales at Acme and an Online sales specialist
+                                                            </div>
+                                                            <div class="card-action has-text-centered">
+                                                                <button class="button btn-dash rounded secondary-btn is-fullwidth ripple no-lh">Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Team member -->
+                                                <div class="column is-4">
+                                                    <div class="flex-card team-card light-bordered light-raised">
+                                                        <div class="card-heading padding-10">
+                                                            <span class="tag is-success">Online</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="avatar">
+                                                                <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/carolin.png">
+                                                            </div>
+                                                            <div class="user-id">
+                                                                <div class="name">Marjory Cambell</div>
+                                                                <div class="position">Emailing Manager</div>
+                                                                <div class="location"><i class="sl sl-icon-globe"></i> New York</div>
+                                                            </div>
+                                                            <div class="user-description">
+                                                                Marjory handles the thousands of emails we send to our subscribers
+                                                            </div>
+                                                            <div class="card-action has-text-centered">
+                                                                <button class="button btn-dash rounded secondary-btn is-fullwidth ripple no-lh">Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Team member -->
+                                                <div class="column is-4">
+                                                    <div class="flex-card team-card light-bordered light-raised">
+                                                        <div class="card-heading padding-10">
+                                                            <span class="tag is-success">Online</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="avatar">
+                                                                <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/nina.jpg">
+                                                            </div>
+                                                            <div class="user-id">
+                                                                <div class="name">Elisabeth Lopez</div>
+                                                                <div class="position">Sales Manager</div>
+                                                                <div class="location"><i class="sl sl-icon-globe"></i> Mexico</div>
+                                                            </div>
+                                                            <div class="user-description">
+                                                                Elisabeth is a specialist of online sales and abandoned cart recovery process
+                                                            </div>
+                                                            <div class="card-action has-text-centered">
+                                                                <button class="button btn-dash rounded secondary-btn is-fullwidth ripple no-lh">Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Team member -->
+                                                <div class="column is-4">
+                                                    <div class="flex-card team-card light-bordered light-raised">
+                                                        <div class="card-heading padding-10">
+                                                            <span class="tag is-warning">Busy</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="avatar">
+                                                                <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/ben.jpg">
+                                                            </div>
+                                                            <div class="user-id">
+                                                                <div class="name">Kevin Smith</div>
+                                                                <div class="position">Shipping Manager</div>
+                                                                <div class="location"><i class="sl sl-icon-globe"></i> Chicago</div>
+                                                            </div>
+                                                            <div class="user-description">
+                                                                Kevin handles all the shipping process from the warehouse to the customers
+                                                            </div>
+                                                            <div class="card-action has-text-centered">
+                                                                <button class="button btn-dash rounded secondary-btn is-fullwidth ripple no-lh">Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Team member -->
+                                                <div class="column is-4">
+                                                    <div class="flex-card team-card light-bordered light-raised">
+                                                        <div class="card-heading padding-10">
+                                                            <span class="tag">Offline</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div class="avatar">
+                                                                <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/marc.jpg">
+                                                            </div>
+                                                            <div class="user-id">
+                                                                <div class="name">Marc Walters</div>
+                                                                <div class="position">Product Designer</div>
+                                                                <div class="location"><i class="sl sl-icon-globe"></i> New York</div>
+                                                            </div>
+                                                            <div class="user-description">
+                                                                Marc is from the product design team with solid project management skills
+                                                            </div>
+                                                            <div class="card-action has-text-centered">
+                                                                <button class="button btn-dash rounded secondary-btn is-fullwidth ripple no-lh">Profile</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /Team List -->
+                                        </div>
+                                        <!-- /Profile team -->
+                                        <!-- Profile notifications -->
+                                        <div id="profile-notifications" class="profile-notifications is-hidden">
+                                            <div class="profile-notifications-inner animated preFadeInUp fadeInUp">
+                                        
+                                                <div class="profile-notifications-title">
+                                                    <h3>Notifications</h3>
+                                                    <span class="tag is-medium">5 New</span>
+                                                </div>
+                                        
+                                                <div class="card-body">
+                                                    <div class="notifications-center">
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <i class="im im-icon-Heart-2"></i>
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">30 minutes ago</div>
+                                                                    <span><b>5 users</b> liked your <b>publication</b> on the company's public blog</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/marc.jpg">
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">2 hours ago</div>
+                                                                    <span><b>Marc Walters</b> commented on a <b>task</b>.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/alex.jpg">
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">5 hours ago</div>
+                                                                    <span><b>3 new bugs</b> were reported by <b>Alex Walsh</b>, in the <b>Analytics App</b> project.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <i class="im im-icon-Add"></i>
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">5 hours ago</div>
+                                                                    <span><b>8 new tasks</b> were added in the <b>Social marketing</b> project.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/carolin.png">
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">Yesterday, 09:31am</div>
+                                                                    <span><b>Marjory Cambell</b> joined the <b>Analytics App</b> project.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <i class="im im-icon-Yes"></i>
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">Yesterday, 08:42am</div>
+                                                                    <span><b>3 tasks</b> were approved in the <b>Social marketing</b> project.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification is-old">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/anthony.jpg">
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">Monday, 07:57pm</div>
+                                                                    <span><b>Anthony Briggs</b> joined the <b>Analytics App</b> project.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification is-old">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/marc.jpg">
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">oct 23, 11:02am</div>
+                                                                    <span><b>Marc Walters</b> commented on a <b>task</b> assigned to you in the <b>Social marketing</b>
+                                                                    project.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Notification item -->
+                                                        <div class="profile-notification is-old">
+                                                            <div class="notification-inner">
+                                                                <div class="icon is-hidden-mobile">
+                                                                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="/static/assets/images/avatars/barry.jpg">
+                                                                </div>
+                                                                <div class="description">
+                                                                    <div class="timestamp">oct 22, 2:12pm</div>
+                                                                    <span><b>Dan Baxter</b> sent you an <b>email</b> with <b>3 attachments</b>.</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Profile page wrapper -->
+                        <div class="fab__ripple"></div>
+                        <div class="hamburger"></div>
+                    </div>
+                    <!-- Profile avatar -->
+                </li>
+            </ul>
+            <!-- /Profile wrapper -->
+        </div>
+    </nav>
+    
+    <!-- Child push sidebar menu -->
+    <nav class="child-menu">
+        <div class="child-menu-inner">
+            <!-- Child menu header -->
+            <ul>
+                <li class="child-header">
+                    <div class="sidebar-title">Navigation</div>
+                    <a id="close-child-menu" href="#" class="menu-wrapper">
+                        <span class="icon-box-toggle ef-4">
+                            <span class="rotate">
+                                <i class="icon-line-top">  	 </i>
+                                <i class="icon-line-center">  </i>
+                                <i class="icon-line-bottom">  </i>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <!-- /Child menu header -->
+    
+            <!-- Sidebar menu 1 -->
+            <ul id="dashboard-menu" class="sidebar-menu is-active animated preFadeInRIght fadeInRight">
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">dashboard</span>Dashboard</a>
+                    <ul>
+                        <li><a href="/">Main layout</a></li>
+                        <li><a href="dashboard-blank">Blank page</a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">insert_chart</span>Analytics</a>
+                    <ul>
+                        <li><a href="dashboard-chartjs">Chart js</a></li>
+                        <li><a href="dashboard-billboardjs">Billboard js</a></li>
+                        <li><a href="dashboard-peityjs">Peity js</a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">developer_board</span>Widgets</a>
+                    <ul>
+                        <li><a href="dashboard-widgets-data">Data widgets</a></li>
+                        <li><a href="dashboard-widgets-social">Social widgets</a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">view_agenda</span>Feed</a>
+                    <ul>
+                        <li><a href="dashboard-feed">Social feed</a></li>
+                        <li><a href="dashboard-feed-post">Post Item</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /Sidebar menu 1 -->
+            <!-- Sidebar menu 2 -->
+            <ul id="documents-menu" class="sidebar-menu animated preFadeInRIght fadeInRight">
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">insert_drive_file</span>Documents</a>
+                    <ul>
+                        <li><a href="dashboard-document-list">Document list <span class="tag is-primary font-w-600 ml-10">2.1</span></a></li>
+                        <li><a href="dashboard-document-details">Document details <span class="tag is-primary font-w-600 ml-10">2.1</span></a></li>
+                        <li><a href="dashboard-document-invoice">Invoice <span class="tag is-primary font-w-600 ml-10">2.1</span></a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">assignment</span>Projects</a>
+                    <ul>
+                        <li><a href="dashboard-project-list">Project list <span class="tag is-secondary font-w-600 ml-10">2.0</span></a></li>
+                        <li><a href="dashboard-project-details">Project details <span class="tag is-secondary font-w-600 ml-10">2.0</span></a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">assignment_turned_in</span>Tasks</a>
+                    <ul>
+                        <li><a href="dashboard-project-task">Single Task <span class="tag is-secondary font-w-600 ml-10">2.0</span></a></li>
+                        <li><a href="dashboard-project-mytasks">My Tasks <span class="tag is-secondary font-w-600 ml-10">2.0</span></a></li>
+                        <li><a href="dashboard-events-board">Events <span class="tag is-primary font-w-600 ml-10">2.1</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /Sidebar menu 2 -->
+            <!-- Sidebar menu 3 -->
+            <ul id="business-menu" class="sidebar-menu animated preFadeInRIght fadeInRight">
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">group</span>Contacts</a>
+                    <ul>
+                        <li><a href="dashboard-contacts-list">Contact list <span class="tag is-primary font-w-600 ml-10">2.1</span></a></li>
+                        <li><a href="dashboard-contacts-grid">Contact grid <span class="tag is-primary font-w-600 ml-10">2.1</span></a></li>
+                        <li><a href="dashboard-contacts-single">Contact details <span class="tag is-primary font-w-600 ml-10">2.1</span></a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">work</span>CRM</a>
+                    <ul>
+                        <li><a href="dashboard-crm-boards">All Boards <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                        <li><a href="dashboard-crm-kanban">Deals Kanban <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                        <li><a href="dashboard-crm-deal">Single Deal <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">verified_user</span>Support Desk</a>
+                    <ul>
+                        <li><a href="dashboard-support-dashboard">Desk Dashboard <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                        <li><a href="dashboard-support-tickets">Ticket list <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                        <li><a href="dashboard-support-ticket">Single Ticket <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /Sidebar menu 3 -->
+            <!-- Sidebar menu 4 -->
+            <ul id="misc-menu" class="sidebar-menu animated preFadeInRIght fadeInRight">
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">grid_on</span>Datatables</a>
+                    <ul>
+                        <li><a href="dashboard-datatable-basic">Basic Datatable <span class="tag is-secondary font-w-600 ml-10">2.0</span></a></li>
+                        <li><a href="dashboard-datatable-variations">Variations <span class="tag is-secondary font-w-600 ml-10">2.0</span></a></li>
+                        <li><a href="dashboard-datatable-advanced">Advanced Example <span class="tag is-secondary font-w-600 ml-10">2.0</span></a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">apps</span>Apps</a>
+                    <ul>
+                        <li><a href="dashboard-chat-app">Chat UI <span class="tag is-danger font-w-600 ml-10">2.3</span></a></li>
+                        <li><a href="dashboard-mailbox-inbox">Inbox UI<span class="tag is-danger font-w-600 ml-10">2.3</span></a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">thumbs_up_down</span>Forum</a>
+                    <ul>
+                        <li><a href="dashboard-forum-home">Forum home <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                        <li><a href="dashboard-forum-channel">Forum Channel <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                        <li><a href="dashboard-forum-topic">Forum Topic <span class="tag is-primary font-w-600 ml-10">2.2</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /Sidebar menu 4 -->
+            <!-- Sidebar menu 5 -->
+            <ul id="settings-menu" class="sidebar-menu animated preFadeInRIght fadeInRight">
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">settings</span>Global settings</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Preferences <span class="sl sl-icon-lock warning-text ml-10"></span></a></li>
+                        <li><a href="javascript:void(0);">Change password <span class="sl sl-icon-lock warning-text ml-10"></span></a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">account_circle</span>User settings</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">User list <span class="sl sl-icon-lock warning-text ml-10"></span></a></li>
+                        <li><a href="javascript:void(0);">Add user <span class="sl sl-icon-lock warning-text ml-10"></span></a></li>
+                        <li><a href="javascript:void(0);">Access rights <span class="sl sl-icon-lock warning-text ml-10"></span></a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a class="parent-link" href="#"><span class="material-icons">domain</span>Organizations</a>
+                    <ul>
+                        <li><a href="javascript:void(0);">Organizations list <span class="sl sl-icon-lock warning-text ml-10"></span></a></li>
+                        <li><a href="javascript:void(0);">Add organization <span class="sl sl-icon-lock warning-text ml-10"></span></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /Sidebar menu 5 -->   
+        </div>
+    </nav>
+    <!-- /Child push sidebar menu -->    
