@@ -34,7 +34,7 @@ PRO versions include **Premium UI Kits**, Lifetime updates and **24/7 LIVE Suppo
 <br />
 <br />
 
-![Flask Dashboard Datta Able - Open-Source Dashboard.](https://raw.githubusercontent.com/app-generator/static/master/products/flask-dashboard-dattaable-screen.png)
+![Flask Dashboard Datta Able - Open-Source Dashboard.](https://raw.githubusercontent.com/app-generator/static/master/flask-dashboard-dattaable/flask-dashboard-dattaable-screen.png)
 
 <br />
 
