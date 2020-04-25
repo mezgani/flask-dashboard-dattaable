@@ -1,25 +1,34 @@
 # [Flask Dashboard Datta Able](https://appseed.us/admin-dashboards/flask-dashboard-dattaable)
 
-**Open-Source Admin Dashboard** coded in **[Flask Framework](https://palletsprojects.com/p/flask/)** - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+**Open-Source Admin Dashboard** coded in **Flask Framework** on top of **Datta Able** design (free version) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
 
-### Dashboard Features:
+<br />
+
+> **[Feedback/Suggest Feature](https://appseed.nolt.io/)**
+
+This product is **built based on community feedback**. Feel free (anonymously) to **[suggest/vote features](https://appseed.nolt.io/3)**. For more information, please access the [Facebook](https://www.facebook.com/webappseed/) page or chat with us on [Discord](https://discord.gg/fZC6hup).
+
+<br />
+
+## Dashboard Features
 
 - SQLite, PostgreSQL, SQLAlchemy ORM
 - Alembic (DB schema migrations)
 - Modular design with **Blueprints**
 - Session-Based authentication (via **flask_login**)
 - Forms validation
-- Deployment scripts: Docker, Gunicorn
+- Deployment scripts: Docker, Gunicorn / Nginx
 - UI Kit: **Datta Able Dashboard** (Lite Version) provided by **CodedThemes**
+- **MIT License**
+- Support: Free support via **Github** and (Paid) **24/7 LIVE Support** via [Discord](https://discord.gg/fZC6hup)
+
 
 <br />
 
-## Product technology stack
+## Dashboard Links
 
-- Used Language: [Python3](https://www.python.org/) (Python2 is not supported)
-- Web Framework: [Flask](https://www.palletsprojects.com/p/flask/)
-- CSS Framework: [Bootstrap CSS](https://getbootstrap.com/)
-- Javascript: [jQuery](https://jquery.com/)
+- [Flask Dashboard Datta Able](https://appseed.us/admin-dashboards/flask-dashboard-dattaable) - Product page
+- [Flask Dashboard Datta Able](https://flask-dashboard-dattaable.appseed.us/login) - LIVE demo
 
 <br />
 
